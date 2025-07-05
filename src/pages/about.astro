@@ -1,10 +1,31 @@
+---
+const pageTitle = "About Me";
+const identity = {
+  firstName: "Liam",
+  country: "Canada",
+  occupation: "Technical Director",
+  hobbies: [ "photography", "mountain biking", "programming "]
+};
+const skills = ["HTML", "CSS", "Javascript", "Astro"];
+---
 <html lang="en">
-  <head></head>
+  <head>
+    <title>{pageTitle}</title>
+  </head>
   <body>
 <a href="/">Home</a>
 <a href="/about/">About</a>
 <a href="/blog/">Blog</a>
-<h1>This is the about page</h1>
+    <h1>{pageTitle}</h1>
+
+    <p>A few facts:</p>
+    <ul>
+      <li>My name is {identity.firstName}</li>
+      <li>I live in {identity.country}</li>
+      {identity.hobbies.length > 2 &&
+      <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
+      }
+    </ul>
   </body>
 </html>
 
