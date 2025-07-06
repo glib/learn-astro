@@ -7,7 +7,7 @@ author: "Liam Gilbride"
 image:
   url: "https://docs.astro.build/assets/rose.webp"
   alt: "the astro logo"
-tags: ["astro", "blog", "learning"]
+tags: ["astro", "blog", "learning", "testing"]
 ---
 
 Welcome to my _new blog_ where:
